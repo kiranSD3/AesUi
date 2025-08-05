@@ -1,0 +1,18 @@
+<div class="contain">
+  <div class="outer-bg">
+    <div class="logoCon">
+      <img class="logoClass" src="/Images/Logo3.png" alt="" />
+    </div>
+    <div class="navbar-content">
+        <ng-container>
+      <nav>
+        <ul>
+          <li *ngFor="let navbar of navbarLink">
+            <a class="navLink" [routerLink]="navbar.NavLinks"> {{ navbar.NavName }}</a>
+          </li>
+        </ul>
+      </nav>
+      </ng-container>
+    </div>
+  </div>
+</div>

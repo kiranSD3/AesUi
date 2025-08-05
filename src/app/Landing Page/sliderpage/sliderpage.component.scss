@@ -1,0 +1,48 @@
+.contain{
+margin-top: 50px !important;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+}
+
+.carousel-item{
+    transition: transform 0.3s ease-in-out !important;
+    
+}
+
+.bd-placeholder-img{
+    height: 550px !important;
+     height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+//   margin-top: 10px;
+}
+
+.carousel-custom-icon{
+    font-size: 2rem;
+  color: white !important;
+}
+
+.sliderHead{
+    color: white;
+    font-size: 50px;
+    margin-top: -20%;
+    letter-spacing: 1px;
+}
+.sliderText{
+    color: white;
+    font-size: 20px;
+    max-width: 800px;
+    white-space: normal;
+    word-wrap: break-word;
+   margin: 0 auto;
+   margin-top: 20px;
+}
+
+::ng-deep .changeConStyle{
+    color: red !important;
+    background-color: #003459;
+    padding: 4px 15px;
+    border-radius: 1px;
+    text-transform: uppercase;
+}
