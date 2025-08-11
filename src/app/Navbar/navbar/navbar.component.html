@@ -14,5 +14,18 @@
       </nav>
       </ng-container>
     </div>
+    <div class="navIcons">
+      <!-- <i class="fa-brands fa-instagram ico"></i>
+  <i class="fa-brands fa-whatsapp ico"></i> -->
+   <li class="nav-item dropdown">
+          <a class="nav-link soc" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Join Our Community
+          </a>
+          <ul class="dropdown-menu">
+            <li *ngFor="let social of socialLink"><a class="dropdown-item dpm" [routerLink]="social.SocLinks">
+              <i [ngClass]="[social.SocIcons, 'ico']" [ngStyle]="{'color' : social.SocColor}" ></i> {{social.SocName}}</a></li>
+          </ul>
+        </li>
+</div>
   </div>
 </div>

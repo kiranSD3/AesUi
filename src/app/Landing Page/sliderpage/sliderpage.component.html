@@ -1,4 +1,4 @@
-<div id="carouselExampleDark" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+<div id="carouselExampleDark" class="carousel carousel-dark slide " data-bs-ride="carousel" data-bs-interval="3000">
 
   <!-- Indicators -->
   <div class="carousel-indicators">
@@ -20,14 +20,14 @@
   <div
   class="d-block w-100 bd-placeholder-img carousel-image"
   [ngStyle]="{
-    'background-image': 'linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(' + slide.sliderBgImage + ')'
+    'background-image': 'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(' + slide.sliderBgImage + ')'
   }">
 
 
       <div class="carousel-caption d-none d-md-block">
         <h5 class="sliderHead" [innerHTML]="slide.sliderHead"></h5>
         <p class="sliderText">{{ slide.sliderText }}</p>
-        <a *ngIf="slide.sliderButton" class="btn btn-primary">{{ slide.sliderButton }}</a>
+        <a *ngIf="slide.sliderButton" class="slidebtn">{{ slide.sliderButton }}</a>
       </div>
 
     </div>

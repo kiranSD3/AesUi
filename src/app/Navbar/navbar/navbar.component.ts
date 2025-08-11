@@ -18,8 +18,18 @@ navbarLink : navbarLinks[] = [
   {NavName : 'Contact Us', NavLinks : '', NavIcons: ''},
 ]
 
+socialLink : socialLinks[] = [
+  {SocIcons : 'fa-brands fa-instagram', SocName : 'Instagram', SocLinks : '', SocColor : '#ed4545'},
+  {SocIcons : 'fa-brands fa-whatsapp', SocName : 'Whatsapp', SocLinks : '', SocColor : '#00db9a'},
+  {SocIcons : 'fa-brands fa-youtube', SocName : 'Youtube', SocLinks : '', SocColor : '#f50000'}
+]
+
 }
 
 export interface navbarLinks{
   NavName: string; NavLinks: string; NavIcons: string;
+}
+
+export interface socialLinks{
+  SocIcons : string; SocName : string; SocLinks : string; SocColor : string;
 }
