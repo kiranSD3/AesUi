@@ -1,0 +1,50 @@
+.contain{
+    margin-top: 30px;
+}
+.outer-content{
+    background-color: #ffffff;
+    height: 100vh;
+    width: 249px;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+.inner-content {
+    position: relative;
+    padding: 20px;
+}
+.conHead {
+   margin-bottom: 10px;
+}
+.catName {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #495057;
+}
+.conContent{
+    display: block;
+    margin-top: 20px;
+}
+.iptBox{
+     display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    margin-top: 15px;
+}
+.chckitem {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+}
+.inpitem{
+    width: 20px;
+    height: 15px;
+    accent-color: red;
+    border-radius: 5px !important;
+    cursor: pointer;
+}
+.labitem{
+    text-transform: capitalize;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}

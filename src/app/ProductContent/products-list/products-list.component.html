@@ -1,0 +1,21 @@
+<div class="product-contain">
+    <div class="outer-product-contain">
+        <div class="inner-product-contain" >
+            <div class="innerParent" *ngFor="let product of productList">
+                <div class="inner-outer-contain">
+                    <img class="conImg" [src]="product.prodImg" alt="">
+                    <div class="prodImgName">
+                        <h4 class="headtxt" [innerHTML]="product.prodImgName"></h4>
+                    </div>
+                    <div class="prodImgDetail">
+                        <p class="imgDet">Pedestrial Fan</p>
+                        
+                    </div>
+                    <div class="prodImgprice">
+                        <p class="Imgprice">Rs. {{product.prodprice}}</p>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>

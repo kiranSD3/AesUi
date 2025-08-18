@@ -1,0 +1,17 @@
+<div class="contain">
+    <div class="outer-content">
+        <div class="inner-content">
+            <div class="conHead">
+                <h3 class="catName">Categories</h3>  
+            </div>
+            <div class="conContent">
+                <div class="iptBox" *ngFor="let category of categoryType; let i = index">
+                    <div class="chckitem">
+                    <input class="inpitem" type="checkbox" [(ngModel)]="category.catSelected" name="" [id]="'cat' + i"> 
+                    <label class="labitem" [for]="'cat' + i">{{category.catName}}</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
