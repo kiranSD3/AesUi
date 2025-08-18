@@ -3,16 +3,24 @@
         <div class="inner-product-contain" >
             <div class="innerParent" *ngFor="let product of productList">
                 <div class="inner-outer-contain">
+                    <i class="fa-solid fa-heart heart-img"></i>
                     <img class="conImg" [src]="product.prodImg" alt="">
                     <div class="prodImgName">
                         <h4 class="headtxt" [innerHTML]="product.prodImgName"></h4>
+                        <p class="starCon"> 4.5<i class="fa-solid fa-star-half-stroke strico"></i></p>
                     </div>
                     <div class="prodImgDetail">
-                        <p class="imgDet">Pedestrial Fan</p>
+                        <p class="imgDet">Rechargeble Pedestrial Fan</p>
                         
                     </div>
                     <div class="prodImgprice">
                         <p class="Imgprice">Rs. {{product.prodprice}}</p>
+                        <p class="imgoldprice">Rs. {{product.prodOldPrice}} </p>
+                        <p class="proddiscou">(Rs. 699 OFF)</p>
+                    </div>
+                    <div class="proddetbtn">
+                        <button type="button" class="prodbtn">View Details</button>
+                        <!-- <i class="fa-regular fa-font-awesome sameico"></i> -->
                     </div>
                     </div>
             </div>

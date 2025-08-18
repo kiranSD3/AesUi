@@ -18,13 +18,15 @@
 
 .inner-outer-contain {
     background-color: white;
-    width: 80%;
-    height: 250px;
+    width: 90%;
+    height: auto;
     object-fit: contain; 
-    transition: 0.3s;
+    // transition: 0.3s;
+    margin-bottom: 30px;
 }
 .inner-outer-contain:hover{
 box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+border-radius: 5px;
 }
 
 .conImg{
@@ -34,22 +36,28 @@ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     // margin-top: 10px;
     z-index: 10;
     cursor: pointer;
+    transition: 0.4s;
+    padding: 10px;
 
 }
+.conImg:hover{
+    transform: scale(1.1);
+}
+
 .prodImgName{
     // text-align: center;
     margin-top: 20px;
+    margin-left: 8px;
+    display: flex;
+    gap: 20px;
 }
 .headtxt {
   text-transform: capitalize;
   font-size: 16px;
 }
 
-.prodImgName{
-    margin-left: 8px;
-}
 .prodImgDetail{
-    margin-top: 5px;
+    margin-top: -10px;
     margin-left: 8px;
 
 }
@@ -60,8 +68,60 @@ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 .prodImgprice{
     margin-top: -10px;
     margin-left: 8px;
+    display: flex;
+    gap: 10px;
 }
 .Imgprice{
     font-weight: 600;
     font-size: 14px;
+}
+.imgoldprice{
+    font-size: 12px;
+    color: grey;
+    text-decoration: line-through;
+    margin-top: 2px;
+}
+.starCon{
+    font-weight: 600;
+    font-size: 14px;
+}
+.strico{
+    color: green;
+    margin-left: 5px;
+}
+.proddiscou{
+    font-size: 12px;
+    color: #c9184a;
+}
+.heart-img{
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 19px;
+    transition: 0.3s;
+    color: grey;
+    cursor: pointer;
+}
+.heart-img:hover{
+color: red;
+}
+.proddetbtn{
+    margin-left: 10px;
+    display: flex;
+    gap: 20px;
+}
+.prodbtn{
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #e36414;
+    color: white;
+    border: none;
+    padding: 8px ;
+    border-radius: 5px;
+}
+.sameico{
+    font-size: 20px;
+    font-weight: 200;
+    color: #6c757d;
 }

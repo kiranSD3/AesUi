@@ -7,6 +7,7 @@ import { ProductsOverviewComponent } from './ProductContent/products-overview/pr
 import { ProductsComponent } from './ProductContent/products/products.component';
 import { ProductsCategoryComponent } from './ProductContent/products-category/products-category.component';
 import { ProductsListComponent } from './ProductContent/products-list/products-list.component';
+import { BreadcrumbComponent } from './ProductContent/breadcrumb/breadcrumb.component';
 
 export const routes: Routes = [
 
@@ -19,5 +20,6 @@ export const routes: Routes = [
 {path: 'productsoverview', component: ProductsOverviewComponent},
 {path: 'productscategory', component: ProductsCategoryComponent},
 {path: 'productslist', component: ProductsListComponent},
+{path: 'prodbread', component: BreadcrumbComponent},
 
 ];

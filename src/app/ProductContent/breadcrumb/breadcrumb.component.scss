@@ -1,0 +1,21 @@
+.breadcrumb{
+    margin-left: 30px;
+    font-size: 17px;
+    display: flex;
+}
+.breadProd{
+    color: red;
+}
+.navcon{
+    margin-left: 90%;
+}
+.fa-heart{
+    padding-right: 10px;
+}
+.fa-heart:hover, .wishcon:hover{
+    color: red;
+    cursor: pointer;
+}
+.wishcon{
+    font-size: 20px;
+}
