@@ -10,20 +10,27 @@ import { FormsModule } from '@angular/forms';
 })
 export class ProductsListComponent {
 productList : productLists[] = [
-  {prodImg : 'Images/small-tablefan.png', prodClass : '', prodImgName: '<span class= "prospnhd"> Image </span> <span class="prospnhd2"> FN01</span>', prodprice: 1299, prodOldPrice : 1899},
-  {prodImg : 'Images/fan9.png', prodClass : '', prodImgName: '<span class= "prospnhd"> Image </span> <span class="prospnhd2"> FN02</span>', prodprice: 1299, prodOldPrice : 1899},
-  {prodImg : 'Images/fan8.png', prodClass : '', prodImgName: '<span class= "prospnhd"> Image </span> <span class="prospnhd2"> FN03</span>', prodprice: 1299, prodOldPrice : 1899},
-  {prodImg : 'Images/ceiling_fan.png', prodClass : '', prodImgName: '<span class= "prospnhd"> Image </span> <span class="prospnhd2"> FN04</span>', prodprice: 1299, prodOldPrice : 1899},
-  {prodImg : 'Images/fan7.png', prodClass : '', prodImgName: '<span class= "prospnhd"> Image </span> <span class="prospnhd2"> FN05</span>', prodprice: 1299, prodOldPrice : 1899},
-  {prodImg : 'Images/fan10.png', prodClass : '', prodImgName: '<span class= "prospnhd"> Image </span> <span class="prospnhd2"> FN05</span>', prodprice: 1299, prodOldPrice : 1899},
-  {prodImg : 'Images/fan7.png', prodClass : '', prodImgName: '<span class= "prospnhd"> Image </span> <span class="prospnhd2"> FN05</span>', prodprice: 1299, prodOldPrice : 1899},
-  {prodImg : 'Images/fan11.png', prodClass : '', prodImgName: '<span class= "prospnhd"> Image </span> <span class="prospnhd2"> FN05</span>', prodprice: 1299, prodOldPrice : 1899},
-  {prodImg : 'Images/fan9.png', prodClass : '', prodImgName: '<span class= "prospnhd"> Image </span> <span class="prospnhd2"> FN05</span>', prodprice: 1299, prodOldPrice : 1899},
-  {prodImg : 'Images/small-tablefan.png', prodClass : '', prodImgName: '<span class= "prospnhd"> Image </span> <span class="prospnhd2"> FN05</span>', prodprice: 1299, prodOldPrice : 1899},
+  {prodImg : 'Images/small-tablefan.png', prodClass : '', prodImgName: '<span class= "prospnhd"> Image </span> <span class="prospnhd2"> FN01</span>', prodprice: 1299, prodOldPrice : 1899, prodWishList : false},
+  {prodImg : 'Images/fan9.png', prodClass : '', prodImgName: '<span class= "prospnhd"> Image </span> <span class="prospnhd2"> FN02</span>', prodprice: 1299, prodOldPrice : 1899, prodWishList : false},
+  {prodImg : 'Images/fan8.png', prodClass : '', prodImgName: '<span class= "prospnhd"> Image </span> <span class="prospnhd2"> FN03</span>', prodprice: 1299, prodOldPrice : 1899, prodWishList : false},
+  {prodImg : 'Images/ceiling_fan.png', prodClass : '', prodImgName: '<span class= "prospnhd"> Image </span> <span class="prospnhd2"> FN04</span>', prodprice: 1299, prodOldPrice : 1899, prodWishList : false},
+  {prodImg : 'Images/fan7.png', prodClass : '', prodImgName: '<span class= "prospnhd"> Image </span> <span class="prospnhd2"> FN05</span>', prodprice: 1299, prodOldPrice : 1899, prodWishList : false},
+  {prodImg : 'Images/fan10.png', prodClass : '', prodImgName: '<span class= "prospnhd"> Image </span> <span class="prospnhd2"> FN05</span>', prodprice: 1299, prodOldPrice : 1899, prodWishList : false},
+  {prodImg : 'Images/fan7.png', prodClass : '', prodImgName: '<span class= "prospnhd"> Image </span> <span class="prospnhd2"> FN05</span>', prodprice: 1299, prodOldPrice : 1899, prodWishList : false},
+  {prodImg : 'Images/fan11.png', prodClass : '', prodImgName: '<span class= "prospnhd"> Image </span> <span class="prospnhd2"> FN05</span>', prodprice: 1299, prodOldPrice : 1899, prodWishList : false},
+  {prodImg : 'Images/fan9.png', prodClass : '', prodImgName: '<span class= "prospnhd"> Image </span> <span class="prospnhd2"> FN05</span>', prodprice: 1299, prodOldPrice : 1899, prodWishList : false},
+  {prodImg : 'Images/small-tablefan.png', prodClass : '', prodImgName: '<span class= "prospnhd"> Image </span> <span class="prospnhd2"> FN05</span>', prodprice: 1299, prodOldPrice : 1899, prodWishList : false},
 ]
+
+// wishlistBtn : boolean = false;
+
+ShowWishColor(product :productLists ){
+  product.prodWishList = !product.prodWishList;
+}
+
 
 }
 
 interface productLists {
-  prodImg : string; prodClass: string; prodImgName: string; prodprice : number; prodOldPrice : number;
+  prodImg : string; prodClass: string; prodImgName: string; prodprice : number; prodOldPrice : number; prodWishList : boolean;
 }

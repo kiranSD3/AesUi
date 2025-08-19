@@ -54,8 +54,13 @@ border-radius: 5px;
 .headtxt {
   text-transform: capitalize;
   font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
+.headtxt:hover{
+    color: #ff7e29;
+}
 .prodImgDetail{
     margin-top: -10px;
     margin-left: 8px;
@@ -103,25 +108,42 @@ border-radius: 5px;
     cursor: pointer;
 }
 .heart-img:hover{
-color: red;
+// color: red;
 }
 .proddetbtn{
     margin-left: 10px;
     display: flex;
     gap: 20px;
 }
-.prodbtn{
-    margin-bottom: 20px;
-    font-size: 15px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #e36414;
-    color: white;
-    border: none;
-    padding: 8px ;
-    border-radius: 5px;
-}
+// .prodbtn{
+//     margin-bottom: 20px;
+//     font-size: 15px;
+//     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+//     background-color: #e36414;
+//     color: white;
+//     border: none;
+//     padding: 8px ;
+//     border-radius: 5px;
+// }
 .sameico{
     font-size: 20px;
     font-weight: 200;
     color: #6c757d;
+}
+
+.soc:hover{
+  background-color:#708d81;
+    // transform: scale(1.01);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+.soc{
+  background: linear-gradient(90deg, #ff7e29, #ff3e3e);
+  padding: 7px 15px;
+  border-radius: 12px;
+  color: white !important;
+  font-weight: 500;
+  font-size: 13px;
+  transition: 0.3s;
+  border: none;
+  margin-bottom: 20px;
 }

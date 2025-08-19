@@ -1,9 +1,13 @@
 <div class="product-contain">
     <div class="outer-product-contain">
-        <div class="inner-product-contain" >
+        <div class="inner-product-contain">
             <div class="innerParent" *ngFor="let product of productList">
                 <div class="inner-outer-contain">
-                    <i class="fa-solid fa-heart heart-img"></i>
+
+                    <i (click)="ShowWishColor(product)" class="fa-solid fa-heart heart-img"
+                        [class.fa-solid]="product.prodWishList" [class.fa-regular]="!product.prodWishList"
+                        [style.color]="product.prodWishList ? 'red' : 'gray'"></i>
+                        
                     <img class="conImg" [src]="product.prodImg" alt="">
                     <div class="prodImgName">
                         <h4 class="headtxt" [innerHTML]="product.prodImgName"></h4>
@@ -11,7 +15,7 @@
                     </div>
                     <div class="prodImgDetail">
                         <p class="imgDet">Rechargeble Pedestrial Fan</p>
-                        
+
                     </div>
                     <div class="prodImgprice">
                         <p class="Imgprice">Rs. {{product.prodprice}}</p>
@@ -19,10 +23,10 @@
                         <p class="proddiscou">(Rs. 699 OFF)</p>
                     </div>
                     <div class="proddetbtn">
-                        <button type="button" class="prodbtn">View Details</button>
+                        <button type="button" class="prodbtn soc">View Details</button>
                         <!-- <i class="fa-regular fa-font-awesome sameico"></i> -->
                     </div>
-                    </div>
+                </div>
             </div>
         </div>
     </div>
