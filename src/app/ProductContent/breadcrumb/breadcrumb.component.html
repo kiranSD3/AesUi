@@ -5,9 +5,15 @@
     <li class="breadcrumb-item active breadProd" aria-current="page">Products</li>
     <li class="breadcrumb-item active breadProd" aria-current="page">Fans</li>
     </div>
+<div class="brdico">
+  <i class="fa-solid fa-bookmark wishico ">
+  <span class="badge " *ngIf="Count > 0 ">{{Count}}</span>
+  </i>
+</div>
+
     <div class="brdasdieContent">
-      <input type="text" class="brdSrchInp" placeholder="Search products" > <button class="srchinp">Find</button>
-      <!-- <i class="fa-solid fa-magnifying-glass srchinp"></i> -->
+      <input type="text" class="brdSrchInp" placeholder="Search products" ><i class="fa-solid fa-magnifying-glass srchinp"></i>
+      <!-- <i class="fa-solid fa-bookmark"></i> -->
     </div>
 </div>
 </nav>

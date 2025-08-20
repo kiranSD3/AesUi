@@ -1,36 +1,42 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { RouterLink } from '@angular/router';
+import { ProductsOverviewComponent } from '../products-overview/products-overview.component';
 
 @Component({
   selector: 'app-products-list',
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, RouterLink],
   templateUrl: './products-list.component.html',
   styleUrl: './products-list.component.scss'
 })
 export class ProductsListComponent {
 productList : productLists[] = [
-  {prodImg : 'Images/small-tablefan.png', prodClass : '', prodImgName: '<span class= "prospnhd"> Image </span> <span class="prospnhd2"> FN01</span>', prodprice: 1299, prodOldPrice : 1899, prodWishList : false},
-  {prodImg : 'Images/fan9.png', prodClass : '', prodImgName: '<span class= "prospnhd"> Image </span> <span class="prospnhd2"> FN02</span>', prodprice: 1299, prodOldPrice : 1899, prodWishList : false},
-  {prodImg : 'Images/fan8.png', prodClass : '', prodImgName: '<span class= "prospnhd"> Image </span> <span class="prospnhd2"> FN03</span>', prodprice: 1299, prodOldPrice : 1899, prodWishList : false},
-  {prodImg : 'Images/ceiling_fan.png', prodClass : '', prodImgName: '<span class= "prospnhd"> Image </span> <span class="prospnhd2"> FN04</span>', prodprice: 1299, prodOldPrice : 1899, prodWishList : false},
-  {prodImg : 'Images/fan7.png', prodClass : '', prodImgName: '<span class= "prospnhd"> Image </span> <span class="prospnhd2"> FN05</span>', prodprice: 1299, prodOldPrice : 1899, prodWishList : false},
-  {prodImg : 'Images/fan10.png', prodClass : '', prodImgName: '<span class= "prospnhd"> Image </span> <span class="prospnhd2"> FN05</span>', prodprice: 1299, prodOldPrice : 1899, prodWishList : false},
-  {prodImg : 'Images/fan7.png', prodClass : '', prodImgName: '<span class= "prospnhd"> Image </span> <span class="prospnhd2"> FN05</span>', prodprice: 1299, prodOldPrice : 1899, prodWishList : false},
-  {prodImg : 'Images/fan11.png', prodClass : '', prodImgName: '<span class= "prospnhd"> Image </span> <span class="prospnhd2"> FN05</span>', prodprice: 1299, prodOldPrice : 1899, prodWishList : false},
-  {prodImg : 'Images/fan9.png', prodClass : '', prodImgName: '<span class= "prospnhd"> Image </span> <span class="prospnhd2"> FN05</span>', prodprice: 1299, prodOldPrice : 1899, prodWishList : false},
-  {prodImg : 'Images/small-tablefan.png', prodClass : '', prodImgName: '<span class= "prospnhd"> Image </span> <span class="prospnhd2"> FN05</span>', prodprice: 1299, prodOldPrice : 1899, prodWishList : false},
+  {prodID : 1, prodImg : 'Images/small-tablefan.png', prodClass : '', prodImgName: '<span class= "prospnhd"> Image </span> <span class="prospnhd2"> FN01</span>', prodprice: 1299, prodOldPrice : 1899, prodWishList : false },
+  {prodID : 2, prodImg : 'Images/fan9.png', prodClass : '', prodImgName: '<span class= "prospnhd"> Image </span> <span class="prospnhd2"> FN02</span>', prodprice: 1299, prodOldPrice : 1899, prodWishList : false },
+  {prodID : 3, prodImg : 'Images/fan8.png', prodClass : '', prodImgName: '<span class= "prospnhd"> Image </span> <span class="prospnhd2"> FN03</span>', prodprice: 1299, prodOldPrice : 1899, prodWishList : false},
+  {prodID : 4, prodImg : 'Images/ceiling_fan.png', prodClass : '', prodImgName: '<span class= "prospnhd"> Image </span> <span class="prospnhd2"> FN04</span>', prodprice: 1299, prodOldPrice : 1899, prodWishList : false},
+  {prodID : 5, prodImg : 'Images/fan7.png', prodClass : '', prodImgName: '<span class= "prospnhd"> Image </span> <span class="prospnhd2"> FN05</span>', prodprice: 1299, prodOldPrice : 1899, prodWishList : false},
+  {prodID : 6, prodImg : 'Images/fan10.png', prodClass : '', prodImgName: '<span class= "prospnhd"> Image </span> <span class="prospnhd2"> FN05</span>', prodprice: 1299, prodOldPrice : 1899, prodWishList : false},
+  {prodID : 7, prodImg : 'Images/fan7.png', prodClass : '', prodImgName: '<span class= "prospnhd"> Image </span> <span class="prospnhd2"> FN05</span>', prodprice: 1299, prodOldPrice : 1899, prodWishList : false},
+  {prodID : 8, prodImg : 'Images/fan11.png', prodClass : '', prodImgName: '<span class= "prospnhd"> Image </span> <span class="prospnhd2"> FN05</span>', prodprice: 1299, prodOldPrice : 1899, prodWishList : false},
+  {prodID : 9, prodImg : 'Images/fan9.png', prodClass : '', prodImgName: '<span class= "prospnhd"> Image </span> <span class="prospnhd2"> FN05</span>', prodprice: 1299, prodOldPrice : 1899, prodWishList : false},
+  {prodID : 10, prodImg : 'Images/small-tablefan.png', prodClass : '', prodImgName: '<span class= "prospnhd"> Image </span> <span class="prospnhd2"> FN05</span>', prodprice: 1299, prodOldPrice : 1899, prodWishList : false},
 ]
 
-// wishlistBtn : boolean = false;
+@Output() likedWish = new EventEmitter<boolean>();
 
 ShowWishColor(product :productLists ){
   product.prodWishList = !product.prodWishList;
+  this.likedWish.emit(product.prodWishList);
+
 }
 
 
+
+
 }
 
-interface productLists {
-  prodImg : string; prodClass: string; prodImgName: string; prodprice : number; prodOldPrice : number; prodWishList : boolean;
+export interface productLists {
+prodID: number;  prodImg : string; prodClass: string; prodImgName: string; prodprice : number; prodOldPrice : number; prodWishList : boolean;
 }

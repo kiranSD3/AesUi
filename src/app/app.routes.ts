@@ -17,7 +17,7 @@ export const routes: Routes = [
 {path: 'indexpage', component: SliderpageComponent},
 {path: 'aboutus', component: AboutusComponent},
 {path: 'products', component: ProductsComponent},
-{path: 'productsoverview', component: ProductsOverviewComponent},
+{path: 'productsoverview/:id', component: ProductsOverviewComponent},
 {path: 'productscategory', component: ProductsCategoryComponent},
 {path: 'productslist', component: ProductsListComponent},
 {path: 'prodbread', component: BreadcrumbComponent},

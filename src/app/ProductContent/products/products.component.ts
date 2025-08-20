@@ -6,10 +6,19 @@ import { BreadcrumbComponent } from '../breadcrumb/breadcrumb.component';
 
 @Component({
   selector: 'app-products',
-  imports: [NavbarComponent, ProductsCategoryComponent, ProductsListComponent, BreadcrumbComponent],
+  imports: [ ProductsCategoryComponent, ProductsListComponent, BreadcrumbComponent, NavbarComponent],
   templateUrl: './products.component.html',
   styleUrl: './products.component.scss'
 })
 export class ProductsComponent {
 
+totalCount: number = 0;
+
+updateCount(isLiked : boolean){
+if(isLiked){
+  this.totalCount++;
+}else{
+  this.totalCount--;
+}
+}
 }

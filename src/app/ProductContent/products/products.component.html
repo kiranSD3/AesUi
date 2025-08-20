@@ -1,6 +1,6 @@
 <app-navbar></app-navbar>
-<app-breadcrumb></app-breadcrumb>
+<app-breadcrumb [Count]="totalCount"></app-breadcrumb>
 <div class="products-wrapper">
   <app-products-category></app-products-category>
-  <app-products-list></app-products-list>
+  <app-products-list (likedWish) ="updateCount($event)"></app-products-list>
 </div>
