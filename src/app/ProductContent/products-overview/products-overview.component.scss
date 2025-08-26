@@ -5,7 +5,7 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .prodImgContain{
-    // border: 1px solid grey;
+    cursor: pointer;
 }
 .idNewImg{
     margin-top: 30px;
@@ -19,9 +19,9 @@
 .inner-contain1{
     display: flex;
 }
+
 .prodHd{
-    
-    
+    width: 100%;    
 }
 .hd{
     max-width: 700px;
@@ -33,4 +33,13 @@
     font-size: 25px;
     font-weight: 300;
     text-transform: capitalize;
+}
+.underline{
+    color: #335c67;
+ 
+}
+.line{
+   width: 92%;
+    height: 10px;
+    margin-left: 50px;
 }
