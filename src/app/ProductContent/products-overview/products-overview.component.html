@@ -4,14 +4,29 @@
     <div class="cont">
         <div class="inner-contain1">
             <div class="prodImgContain">
+                
+                <img class="idNewImg" [src]="selectedProduct.idimg" alt="" srcset="">
+                <img class="idNewImg" [src]="selectedProduct.idimg" alt="" srcset="">
                 <img class="idNewImg" [src]="selectedProduct.idimg" alt="" srcset="">
                 <img class="idNewImg" [src]="selectedProduct.idimg" alt="" srcset="">
             </div>
             <div class="prodDetContain">
                 <div class="prodHd">
                     <h3 class="hd">{{selectedProduct.prodImgName}}</h3>
+                    <p class="hd-desc">Blue Pedestal Fan</p>
                     <p class="starCon"> 4.5<i class="fa-solid fa-star-half-stroke strico"></i></p>
                     <span class="underline"> <hr class="line"></span>
+                    <div class="imgpricedet-main">
+
+                    <div class="imgpricedet">
+                    <h3 class="prodprice">₹{{selectedProduct.prodprice}}</h3>
+                    </div>
+                    <div class="imgpricedet">
+                        <h5 class="prodoldprice">MRP ₹{{selectedProduct.prodOldPrice}}</h5>
+                    </div>
+                    </div>
+                    <p class="taxtxt">Inclusive of all taxes</p>
+                    <p class="colortxt">Select color</p>
                 </div>
             </div>
         </div>

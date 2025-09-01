@@ -24,7 +24,7 @@ export class ProductsOverviewComponent implements OnInit {
   {prodID : 4, idimg : 'Images/ceiling_fan.png', prodClass : '', prodImgName: 'Image FN04', prodprice: 1299, prodOldPrice : 1899, prodWishList : false},
   {prodID : 5, idimg : 'Images/fan7.png', prodClass : '', prodImgName: 'Image FN05', prodprice: 1299, prodOldPrice : 1899, prodWishList : false},
   {prodID : 6, idimg : 'Images/fan10.png', prodClass : '', prodImgName: 'Image FN06', prodprice: 1299, prodOldPrice : 1899, prodWishList : false},
-  {prodID : 7, idimg : 'Images/fan7.png', prodClass : '', prodImgName: 'Image FN07', prodprice: 1299, prodOldPrice : 1899, prodWishList : false},
+  {prodID : 7, idimg : 'Images/fan7.png', prodClass : '', prodImgName: 'V-Guard', prodprice: 1299, prodOldPrice : 1899, prodWishList : false},
   {prodID : 8, idimg : 'Images/fan11.png', prodClass : '', prodImgName: 'Image FN08', prodprice: 1299, prodOldPrice : 1899, prodWishList : false},
   {prodID : 9, idimg : 'Images/fan9.png', prodClass : '', prodImgName: 'Image FN09', prodprice: 1299, prodOldPrice : 1899, prodWishList : false},
   {prodID : 10, idimg : 'Images/small-tablefan.png', prodClass : '', prodImgName: 'Image FN10', prodprice: 1299, prodOldPrice : 1899, prodWishList : false},
