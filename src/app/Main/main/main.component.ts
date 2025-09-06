@@ -6,7 +6,7 @@ import { ProductsOverviewComponent } from "../../ProductContent/products-overvie
 
 @Component({
   selector: 'app-main',
-  imports: [ SliderpageComponent, AboutusComponent, ProductsOverviewComponent, NavbarComponent],
+  imports: [ SliderpageComponent, AboutusComponent, NavbarComponent],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss'
 })
