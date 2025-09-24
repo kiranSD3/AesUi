@@ -4,29 +4,83 @@
     <div class="cont">
         <div class="inner-contain1">
             <div class="prodImgContain">
+
+                <div class="img1">
+                <img class="idNewImg" [src]="selectedProduct.idimg" alt="" srcset="">
+                <img class="idNewImg" [src]="selectedProduct.idimg" alt="" srcset="">
+                </div>
+                 </div>
+
+                   <div class="prodImgContain">
+
+                <div class="img1">
+                <img class="idNewImg" [src]="selectedProduct.idimg" alt="" srcset="">
+                <img class="idNewImg" [src]="selectedProduct.idimg" alt="" srcset="">
+                </div>
+                 </div>
+
+                 <!-- <div class="img1">
                 
+                </div>
+
+                 <div class="img1">
                 <img class="idNewImg" [src]="selectedProduct.idimg" alt="" srcset="">
+                </div>
+
+                 <div class="img1">
                 <img class="idNewImg" [src]="selectedProduct.idimg" alt="" srcset="">
-                <img class="idNewImg" [src]="selectedProduct.idimg" alt="" srcset="">
-                <img class="idNewImg" [src]="selectedProduct.idimg" alt="" srcset="">
-            </div>
+                </div> -->
+
+
             <div class="prodDetContain">
                 <div class="prodHd">
                     <h3 class="hd">{{selectedProduct.prodImgName}}</h3>
                     <p class="hd-desc">Blue Pedestal Fan</p>
                     <p class="starCon"> 4.5<i class="fa-solid fa-star-half-stroke strico"></i></p>
-                    <span class="underline"> <hr class="line"></span>
+                    <span class="underline">
+                        <hr class="line">
+                    </span>
                     <div class="imgpricedet-main">
 
-                    <div class="imgpricedet">
-                    <h3 class="prodprice">₹{{selectedProduct.prodprice}}</h3>
-                    </div>
-                    <div class="imgpricedet">
-                        <h5 class="prodoldprice">MRP ₹{{selectedProduct.prodOldPrice}}</h5>
-                    </div>
+                        <div class="imgpricedet">
+                            <h3 class="prodprice">₹{{selectedProduct.prodprice}}</h3>
+                        </div>
+                        <div class="imgpricedet">
+                            <h5 class="prodoldprice">MRP ₹{{selectedProduct.prodOldPrice}}</h5>
+                        </div>
                     </div>
                     <p class="taxtxt">Inclusive of all taxes</p>
-                    <p class="colortxt">Select color</p>
+                    <div class="colorDiv">
+                        <p class="colortxt">Select color</p>
+                        <div class="colors">
+                            <p class="col-list" *ngFor="let col of color; let i = index"
+                                [ngClass]="{'val1': i === 0, 'val2': i === 1}">{{col.color}}</p>
+                        </div>
+                    </div>
+                    <div class="wish">
+                        <button class="wishBtn"><i class="fa-solid fa-heart strico1"></i> WISHLIST</button>
+                        <button class="wishBtn2"> COMPARE</button>
+                    </div>
+                    <div class="prodDetails">
+                        <div class="dethead">
+                            <h4 class="proddethed">PRODUCT DETAILS</h4>
+                        </div>
+                        <div class="detailed">
+                            <p>{{selectedProduct.prodDetails}}</p>
+                        </div>
+                        <div class="prodSpec">
+                            <h4 class="proddethed">Size & Fit</h4>
+                            <p class="det">{{selectedProduct.prodspec}}</p>
+                        </div>
+                        <div class="prodSpec">
+                            <h4 class="proddethed">Material & Care</h4>
+                            <p class="det">{{selectedProduct.prodMet}}</p>
+                        </div>
+                        <div class="prodSpec">
+                            <h4 class="proddethed">Specifications</h4>
+                            <p class="det">Product Code: 32428437</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
