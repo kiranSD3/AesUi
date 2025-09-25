@@ -6,15 +6,17 @@
 }
 .prodImgContain{
     cursor: pointer;
-     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-     margin-left: 15px;
+    //  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    //  margin-left: 15px;
 }
+
+
 .idNewImg{
     margin-top: 30px;
     width: 350px;
     height: 400px;
     margin-bottom: 30px;
-    margin-left: 30px;
+    // margin-left: 30px;
     transition: 0.3s;
 }
 .idNewImg:hover{
@@ -35,7 +37,7 @@
     margin-left: 50px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: #02010a;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 30px;
 }
 .prodoldprice{
@@ -83,6 +85,86 @@
     text-transform: uppercase;
     margin-left: 50px;
     font-weight: 700;
-    font-size: 17px;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.colors{
+    display: flex;
+    gap: 50px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.col-list{
+    
+    padding: 7px 33px;
+    border-radius: 25px;
+}
+
+.val1{
+    border: 1px solid white;
+    background-color: silver;
+    color: white;
+    cursor: pointer;
+}
+
+.val2{
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.wish{
+    margin-left: 50px;
+    margin-top: 30px;
+    gap: 30px;
+    display: flex;
+}
+.wishBtn{
+    padding: 5px 33px;
+    width: 40%;
+    background-color: #ff5714;
+    border: none;
+    font-weight: 500;
+    color: white;
+}
+.wishBtn2{
+    padding: 5px 33px;
+    width: 40%;
+    border: none;    
+    border: 1px solid lightgray;
+    background-color: transparent;
+    font-weight: 500;
+}
+
+.wishBtn2:hover{
+    border: 1px solid black;
+}
+
+.strico1{
+    color: white;
+}
+
+.prodDetails{
     margin-top: 50px;
+    margin-left: 50px;
+}
+
+.proddethed{
+    font-size: 16px;
+    font-weight: 700;
+    color: #495057;
+}
+
+.detailed{
+    margin-top: 20px;
+    max-width: 600px;
+    text-align: left;
+    color: grey;
+}
+.det{
+    margin-top: 10px;
+    font-size: 14px;
 }

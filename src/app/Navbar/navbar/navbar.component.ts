@@ -28,6 +28,14 @@ socialLink : socialLinks[] = [
   {SocIcons : 'fa-brands fa-youtube', SocName : 'Youtube', SocLinks : '', SocColor : '#f50000'}
 ]
 
+navlogos : navLogo[] = [
+  {navlog :'Images/logo1.png' }
+]
+
+}
+
+export interface navLogo{
+navlog : string;
 }
 
 export interface navbarLinks{

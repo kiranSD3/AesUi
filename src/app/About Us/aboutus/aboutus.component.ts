@@ -22,6 +22,14 @@ countContent : countContents[] = [
   { CountNum : 1000,CountContent : 'Happy Satisfied Clients'},
 ]
 
+abtimgs : abtig[]= [
+  {abtim : 'Images/aboutus-img.jpg'}
+]
+
+}
+
+interface abtig{
+  abtim: string;
 }
 
  interface aboutCards {
@@ -33,3 +41,4 @@ countContent : countContents[] = [
  interface countContents{
    CountNum : number; CountContent : string;
 }
+

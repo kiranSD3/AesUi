@@ -8,6 +8,7 @@
 }
 
 .breadcrumb{
+    margin-top: 15px;
     display: flex;
     justify-content: space-between;
 }
@@ -46,7 +47,7 @@ input:focus{
 .brdico{
     position: absolute;
   right: 350px; 
-  top: 110px !important;
+//   top: 110px !important;
   display: flex;
   align-items: center;
   justify-content: center;
